@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(59, 59, 175, 0.76);
+    color: #000;
+    font-family: cursive;
+  }
+  
+  .container {
+    display: flex;
+    text-align: center;
+  }
+  
+  .mouse-event {
+    border: solid 5px rgba(211, 211, 211, 0.562);
+    margin: 40px;
+    min-width: 180px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 25px;
+  }
+  
+  .mouse-event h4 {
+    position: absolute;
+    top: -60px;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 600;
+    color: rgb(180, 144, 144);
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      flex-direction: column;
+    }
+  }
